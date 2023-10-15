@@ -1,0 +1,33 @@
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "The Godfather",
+  "genre": ["Crime", "Drama"],
+  "year": 1972,
+  "director": "Francis Ford Coppola",
+  "duration": 175,
+  "rate": 9.2,
+  
+
+}
+########
+
+GET http://localhost:3000/movies
+
+########
+GET http://localhost:3000/movies/:id
+
+########
+
+GET http://localhost:3000/movies?genre=action
+
+########
+
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c
+Content-Type: application/json
+
+{  
+  "year": 1972,  
+}
