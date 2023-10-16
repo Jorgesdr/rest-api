@@ -6,7 +6,7 @@ export class MovieModel {
   static getAll = async ({ genre }) => {
     if (genre) {
       return movies.filter(
-        movie => movie.genre.some((g) => g.toLowerCase() === genre.toLowerCase())
+        movie => movie.genre.some(g => g.toLowerCase() === genre.toLowerCase())
       )
     }
     return movies
